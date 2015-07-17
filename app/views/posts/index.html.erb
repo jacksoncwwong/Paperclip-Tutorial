@@ -1,0 +1,4 @@
+<% @posts.each do |p| %>
+	<img src="<%= p.picture.url(:medium) %>" />
+	<%= link_to 'Destroy', p, method: :delete %>
+<% end %>
